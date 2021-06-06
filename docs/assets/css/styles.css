@@ -1,1 +1,30 @@
-.current { color: green; }
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&family=Roboto+Mono:wght@400;500;600;700&display=swap");
+:root { --gap--xs: 2px; --gap--sm: 5px; --gap: 10px; --gap--lg: 15px; --gap--xl: 20px; --bg-color: #fffdccba; --bg-color--dark: #2D3047; --primary-color: #9f1cce; --secondary-color: #5998C5; --accent-color: #E03616; --muted-accent-color: #f9b0b0; --font-family: 'Lato', Verdana, Arial, Helvetica, sans-serif; --font-family--mono: 'Roboto Mono', Courier, monospace; --fonr-size: 14px; }
+
+/* ========================================================================== Properties order example(ref: https://github.com/necolas/idiomatic-css) // Positioning position: absolute; z-index: 10; top: 0; right: 0; bottom: 0; left: 0;
+ // Display & Box Model display: inline-block; overflow: hidden; box-sizing: border-box; width: 100px; height: 100px; padding: 10px; border: 10px solid #333; margin: 10px;
+ // Other background: #000; color: #fff; font-family: sans-serif; font-size: 16px; text-align: right;
+========================================================================== */
+body { background-color: var(--bg-color); }
+
+a { text-decoration: none; color: var(--primary-color); }
+
+a:hover { color: var(--muted-accent-color); }
+
+.container { display: flex; flex-flow: column nowrap; justify-content: stretch; align-items: stretch; width: 100%; font-family: var(--font-family); }
+
+.nav { padding: var(--gap) var(--gap--xl); font-family: var(--font-family--mono); font-size: 20px; }
+
+.nav__item { color: #000; }
+
+.nav__item:not(:last-child) { margin-right: var(--gap); }
+
+.nav__item--current { text-decoration: underline; }
+
+.main { align-self: center; max-width: 780px; padding: var(--gap--lg); }
+
+.about__img { border-radius: 50%; border-color: var(--muted-accent-color); border-width: var(--gap--sm); border-style: solid; }
+
+.about__item { line-height: 1.5; }
+
+.about__sns { font-size: 20px; text-align: center; }
