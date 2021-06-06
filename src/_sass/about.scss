@@ -1,0 +1,15 @@
+.about__img {
+    border-radius: 50%;
+    border-color: var(--muted-accent-color);
+    border-width: var(--gap--sm);
+    border-style: solid;
+}
+
+.about__item {
+    line-height: 1.5;
+}
+
+.about__sns {
+    font-size: 20px;
+    text-align: center;
+}
