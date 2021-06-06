@@ -1,13 +1,4 @@
-collections:
-  authors:
-    output: true
-
 defaults:
-  - scope:
-      path: ""
-      type: "authors"
-    values:
-        layout: "author"
   - scope:
       path: ""
       type: "posts"
@@ -22,3 +13,5 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+
+source: ./src

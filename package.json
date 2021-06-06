@@ -1,0 +1,26 @@
+{
+  "name": "@kyungeunni/website",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf docs/ site/",
+    "build": "npm run clean && jekyll build && mv ./_site ./docs",
+    "version": "npm run build && git add -A docs",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyungeunni/website.git"
+  },
+  "author": "kyungeunni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kyungeunni/website/issues"
+  },
+  "homepage": "https://github.com/kyungeunni/website#readme"
+}

@@ -1,9 +1,12 @@
 ---
 layout: default
 ---
-<h1>{{ page.name }}</h1>
-<h2>{{ page.position }}</h2>
-
+{% assign author = site.data.author %}
+<a rel="author"
+  href="https://twitter.com/{{ author.twitter }}"
+  title="{{ author.name }}">
+    {{ author.name }}
+</a>
 {{ content }}
 
 <h2>Posts</h2>
