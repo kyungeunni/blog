@@ -1,14 +1,14 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
+<h1 class="post__title">{{ page.title }}</h1>
 
-<p>
+<p class="post__meta">
+  {% assign author = site.data.author %}
     {{ page.date | date_to_string }}
-    {% assign author = site.authors | where: 'short_name', page.author | first %}
-    {% if author %}
       - <a href="{{ author.url }}">{{ author.name }}</a>
-    {% endif %}
 </p>
-  
+
+<div class="post__content">
 {{ content }}
+</div>

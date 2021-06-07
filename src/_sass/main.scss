@@ -35,7 +35,27 @@ a {
 }
 
 a:hover {
-    color: var(--muted-accent-color)
+    color: var(--muted-accent-color);
+}
+
+code {
+    background-color: #ffd766;
+    padding: 0 var(--gap--sm);
+    font-size: 0.9em;
+    border-radius: var(--gap--xs);
+}
+
+p {
+    line-height: 1.4;
+}
+
+blockquote {
+    color: var(--secondary-color);
+    font-style: italic;
+}
+
+blockquote p::before {
+    content: '> ' ;
 }
 
 .container {
@@ -55,6 +75,7 @@ a:hover {
 
 .nav__item {
     color: #000;
+    text-decoration: none;
 }
 
 .nav__item:not(:last-child) {
