@@ -2,7 +2,7 @@ name: Build and deploy to GitHub Pages
 
 on:
   push:
-    branches:
+    tags:
       - 'release'
 
 jobs:
@@ -19,8 +19,21 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-gems-
 
-    - uses: helaili/jekyll-action@v2
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        target_branch: gh-pages
+    - run: gem install bundler
 
+    - name: Install bundler
+      run: bundle install
+
+    - name: Build
+      run: bundle exec jekyll build
+
+    - uses: actions/checkout@v2
+      with:
+        ref: gh-pages
+    - run: |
+        date > generated.txt
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        git add .
+        git commit -m "GitHub page built"
+        git push -f
