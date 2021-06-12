@@ -8,19 +8,18 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "bundle exec jekyll serve",
     "clean": "rm -rf docs/ site/",
-    "build": "npm run clean && bundle exec jekyll build && mv ./_site ./docs",
+    "build": "npm run clean && bundle exec jekyll build && npm run build:cp",
+    "build:cp": "mv ./_site ./docs && cp ./CNAME ./docs",
     "version": "npm run build && git add -A docs",
     "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kyungeunni/website.git"
+    "url": "git+https://github.com/kyungeunni/kyungeunni.github.io.git"
   },
   "author": "kyungeunni",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kyungeunni/website/issues"
-  },
-  "homepage": "https://github.com/kyungeunni/website#readme"
+  "homepage": "https://kyungeun.kim"
 }

@@ -1,5 +1,6 @@
 ---
 title: How to maintain a monorepo using Lerna and NPM 7
+description: Upgrading to NPM 7 while using Lerna@4 for your monorepo
 tags: monorepo, lerna, npm, nodejs, workspace
 draft: true
 ---
