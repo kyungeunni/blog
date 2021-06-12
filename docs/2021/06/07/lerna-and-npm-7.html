@@ -1,32 +1,30 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-      
-        How to maintain a monorepo using Lerna and NPM 7 | 
-      
-    kyungeun.kim</title>
     <link rel="icon" href="/assets/img/favicon.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/assets/css/styles.css">
-    <link type="application/atom+xml" rel="alternate" href="/feed.xml" title="kyungeunni.github.io" />
+    <link type="application/atom+xml" rel="alternate" href="https://kyungeun.kim/feed.xml" title="Kyung-eun Kim" />
     <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>How to maintain a monorepo using Lerna and NPM 7 | kyungeunni.github.io</title>
+<title>How to maintain a monorepo using Lerna and NPM 7 | Kyung-eun Kim</title>
 <meta name="generator" content="Jekyll v3.9.0" />
 <meta property="og:title" content="How to maintain a monorepo using Lerna and NPM 7" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="I’ve been putting off upgrading to NPM 7 for my monorepo using Lerna@4.0.0 due to several issues have been occured. However I’ve reached a point where I couldn’t juggle around anymore as it was a significant productivity killer." />
-<meta property="og:description" content="I’ve been putting off upgrading to NPM 7 for my monorepo using Lerna@4.0.0 due to several issues have been occured. However I’ve reached a point where I couldn’t juggle around anymore as it was a significant productivity killer." />
-<meta property="og:site_name" content="kyungeunni.github.io" />
+<meta name="description" content="Upgrading to NPM 7 while using Lerna@4 for your monorepo" />
+<meta property="og:description" content="Upgrading to NPM 7 while using Lerna@4 for your monorepo" />
+<link rel="canonical" href="https://kyungeun.kim/2021/06/07/lerna-and-npm-7.html" />
+<meta property="og:url" content="https://kyungeun.kim/2021/06/07/lerna-and-npm-7.html" />
+<meta property="og:site_name" content="Kyung-eun Kim" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-06-07T00:00:00+02:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="How to maintain a monorepo using Lerna and NPM 7" />
+<meta name="twitter:site" content="@kyungeunni" />
 <script type="application/ld+json">
-{"url":"/2021/06/07/lerna-and-npm-7.html","headline":"How to maintain a monorepo using Lerna and NPM 7","dateModified":"2021-06-07T00:00:00+02:00","description":"I’ve been putting off upgrading to NPM 7 for my monorepo using Lerna@4.0.0 due to several issues have been occured. However I’ve reached a point where I couldn’t juggle around anymore as it was a significant productivity killer.","datePublished":"2021-06-07T00:00:00+02:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/2021/06/07/lerna-and-npm-7.html"},"@context":"https://schema.org"}</script>
+{"headline":"How to maintain a monorepo using Lerna and NPM 7","dateModified":"2021-06-07T00:00:00+02:00","datePublished":"2021-06-07T00:00:00+02:00","url":"https://kyungeun.kim/2021/06/07/lerna-and-npm-7.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://kyungeun.kim/2021/06/07/lerna-and-npm-7.html"},"description":"Upgrading to NPM 7 while using Lerna@4 for your monorepo","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -34,13 +32,13 @@
     <div class="container">
       <nav class="nav">
     
-        <a href="/"
-        class="nav__item"
-        >Blog</a>
+        <a href="/" class="nav__item">
+            Blog
+        </a>
     
-        <a href="/about.html"
-        class="nav__item"
-        >About</a>
+        <a href="/about" class="nav__item">
+            About
+        </a>
     
 </nav>
 
