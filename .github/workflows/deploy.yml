@@ -3,10 +3,10 @@ name: Build and deploy to GitHub Pages
 on:
   push:
     branches:
-      - 'release'
+      - 'main'
 
 jobs:
-  jekyll:
+  Deploy:
     runs-on: ubuntu-16.04
     steps:
     - uses: actions/checkout@v2

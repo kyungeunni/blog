@@ -10,10 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "bundle exec jekyll serve",
     "clean": "rm -rf docs/ site/",
-    "build": "npm run clean && bundle exec jekyll build && npm run build:cp",
-    "build:cp": "mv ./_site ./docs && cp ./CNAME ./docs",
-    "version": "npm run build && git add -A docs",
-    "postversion": "git push && git push --tags"
+    "build": "npm run clean && bundle exec jekyll build && cp ./CNAME ./docs"
   },
   "repository": {
     "type": "git",
