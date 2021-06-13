@@ -3,23 +3,32 @@ name: Build and deploy to GitHub Pages
 on:
   push:
     branches:
-      - 'release'
+      - 'main'
 
 jobs:
-  jekyll:
+  Deploy:
     runs-on: ubuntu-16.04
     steps:
     - uses: actions/checkout@v2
 
-    # Use GitHub Actions' cache to shorten build times and decrease load on servers
-    - uses: actions/cache@v2
+    - uses: ruby/setup-ruby@v1
       with:
-        path: vendor/bundle
-        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
-        restore-keys: |
-          ${{ runner.os }}-gems-
+        ruby-version: 2.6
+        bundler-cache: true
 
-    # Standard usage
-    - uses:  helaili/jekyll-action@v2
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Install bundler
+      run: bundle install
+
+    - name: Build
+      run: bundle exec jekyll build
+
+    - name: Copy _site to docs directory
+      run: cp ./CNAME ./docs
+
+    - name: Push to gh-pages
+      run: |
+        git add docs/
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        git commit -m "GitHub page built"
+        git push origin -f release:gh-pages
