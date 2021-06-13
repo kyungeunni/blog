@@ -23,7 +23,9 @@ jobs:
       run: bundle exec jekyll build
 
     - name: Copy _site to docs directory
-      run: cp ./CNAME ./docs
+      run: |
+        cp -a ./_site/. ./docs/
+        cp ./CNAME ./docs
 
     - name: Push to gh-pages branch
       run: |

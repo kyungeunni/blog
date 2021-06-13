@@ -19,7 +19,6 @@ twitter:
   username: kyungeunni
 
 source: ./src
-destination: ./docs
 
 plugins:
   - jekyll-feed
