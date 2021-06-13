@@ -25,10 +25,10 @@ jobs:
     - name: Copy _site to docs directory
       run: cp ./CNAME ./docs
 
-    - name: Push to gh-pages
+    - name: Push to gh-pages branch
       run: |
         git add docs/
         git config user.name github-actions
         git config user.email github-actions@github.com
         git commit -m "GitHub page built"
-        git push origin -f release:gh-pages
+        git push origin -f main:gh-pages
