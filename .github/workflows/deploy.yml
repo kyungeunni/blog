@@ -23,13 +23,12 @@ jobs:
       run: bundle exec jekyll build
 
     - name: Copy _site to docs directory
-      run: |
-        mv ./_site ./docs && cp ./CNAME ./docs
-        ls -a
+      run: cp ./CNAME ./docs
+
     - name: Push to gh-pages
       run: |
         git add docs/
         git config user.name github-actions
         git config user.email github-actions@github.com
         git commit -m "GitHub page built"
-        git push origin gh-page -f
+        git push origin -f release:gh-pages
