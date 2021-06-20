@@ -39,7 +39,7 @@ a:hover {
 }
 
 code {
-    background-color: #ffd766;
+    background-color: var(--highlight-color);
     padding: 0 var(--gap--sm);
     font-size: 0.9em;
     border-radius: var(--gap--xs);
@@ -73,21 +73,41 @@ blockquote p::before {
     font-size: 20px;
 }
 
+.nav__menu {
+    display: flex;
+    justify-content: center;
+    padding: var(--gap);
+}
+
 .nav__item {
-    color: #000;
+    color: #424242;
     text-decoration: none;
 }
 
-.nav__item:not(:last-child) {
-    margin-right: var(--gap);
+.nav__item::after {
+    content: '|';
+    color: #424242;
 }
 
-.nav__item--current {
-    text-decoration: underline;
+.nav__item:not(:last-child) {
+    margin-right: var(--gap--lg);
+}
+
+.nav__item:last-child::after {
+    content: '';
 }
 
 .main {
     align-self: center;
     max-width: 780px;
     padding: var(--gap--lg);
+}
+
+.tags__item {
+    padding: var(--gap--xs) var(--gap--sm);
+    margin-right: var(--gap--xs);
+    background-color: var(--highlight-color);
+    border-radius: var(--gap--sm);
+    font-style: italic;
+    font-size: var(--font-size--sm);
 }

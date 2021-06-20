@@ -1,8 +1,21 @@
+.about {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    max-width: 700px;
+}
+
 .about__img {
     border-radius: 50%;
     border-color: var(--muted-accent-color);
     border-width: var(--gap--sm);
     border-style: solid;
+
+    justify-self: center;
+}
+
+.about__title {
+    text-align: center;
 }
 
 .about__item {

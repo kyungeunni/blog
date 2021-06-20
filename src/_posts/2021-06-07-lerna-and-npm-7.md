@@ -1,7 +1,7 @@
 ---
 title: How to maintain a monorepo using Lerna and NPM 7
 description: Upgrading to NPM 7 while using Lerna@4 for your monorepo
-tags: monorepo, lerna, npm, nodejs, workspace
+tags: monorepo lerna npm node.js workspace
 draft: true
 ---
 I've been putting off upgrading to NPM 7 for my monorepo using [Lerna@4.0.0](https://github.com/lerna/lerna) due to several issues have been occured. However I've reached a point where I couldn't juggle around anymore as it was a significant productivity killer.

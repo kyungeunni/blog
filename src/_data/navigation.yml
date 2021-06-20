@@ -1,4 +1,6 @@
-- name: Blog
+- name: Home
   link: /
 - name: About
   link: /about
+# - name: Github
+#   link: https://github.com/kyungeunni
