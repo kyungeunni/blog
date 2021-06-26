@@ -1,7 +1,7 @@
 ---
-title: Mocking HTTP requests for your tests
-description: Possible replacement for nock when writing the tests
-tags: unit-test test nock mocha
+title: Mocking HTTP requests when writing tests (Node.js)
+description: Some alternatives to Nock when mocking HTTP requests in your tests.
+tags: unit-test test nock mocha node.js
 draft: false
 ---
 Quite often we need to mock remote HTTP requests when testing, either for integration tests or unit tests that your logic needs to react differently depending on the variation of the response of the request. There are several options to achieve that, but I will write down my favorite ones.
