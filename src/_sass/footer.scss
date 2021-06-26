@@ -1,0 +1,34 @@
+.footer {
+    margin-top: var(--gap--lg);
+    align-self: center;
+    width: 100%;
+}
+
+.footer__copyright {
+    text-align: center;
+    font-size: 13px;
+    color: #757575;
+}
+
+.footer__social {
+    text-align: center;
+    padding-bottom: var(--gap--xl);
+}
+
+.footer__social > a {
+    display: inline-block;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin: 0 var(--gap);
+    color: var(--bg-color--dark);
+    opacity: 0.5;
+}
+
+.footer__social > a:hover {
+    opacity: 0.9;
+}
