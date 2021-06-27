@@ -1,12 +1,13 @@
-.highlight {
+pre.highlight {
   padding: var(--gap);
+  overflow-y: auto;
 }
 
 .highlight code, .highlight pre {
   color:#fdce93;
   background-color:#3f3f3f;
   margin: 0;
-  border-radius: var(--gap);
+  border-radius: var(--gap--sm);
 }
 
 .highlight .hll {

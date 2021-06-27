@@ -99,10 +99,16 @@ blockquote p::before {
 }
 
 .main {
-    align-self: center;
     flex: 3 auto;
-    max-width: 780px;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
     padding: var(--gap--lg);
+}
+
+.main__contents{
+    max-width: 780px;
+    width: 100%;
 }
 
 .tags__item {
