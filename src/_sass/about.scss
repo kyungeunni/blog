@@ -2,7 +2,15 @@
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+    justify-content: space-around;
     max-width: 700px;
+}
+
+.about__intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: var(--gap--lg);
 }
 
 .about__img {
@@ -21,7 +29,7 @@
 }
 
 .about__content {
-    list-style-type: disc;
+    margin: var(--gap--lg);
 }
 
 .about__item {
