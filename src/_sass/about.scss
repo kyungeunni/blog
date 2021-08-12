@@ -7,15 +7,21 @@
 
 .about__img {
     border-radius: 50%;
-    border-color: var(--muted-accent-color);
+    border-color: var(--primary-color);
     border-width: var(--gap--sm);
     border-style: solid;
-
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
     justify-self: center;
 }
 
 .about__title {
     text-align: center;
+}
+
+.about__content {
+    list-style-type: disc;
 }
 
 .about__item {

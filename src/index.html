@@ -1,25 +1,24 @@
 ---
 layout: default
+title: Hello
 ---
+<div class="about">
+    <img class="about__img"
+        src="/assets/img/kk.png"
+        alt="Kyung-eun Kim profile">
+    <div class="about__intro">
+        <h1 class="about__title">
+            Hi👋 I'm Kyung-eun Kim
+        </h1>
 
-<ul class="post-list">
-  {% for post in site.posts %}
-    {% if post.draft == false %}
-      <li>
-        <a href="{{ post.url }}"
-          class="post-item">
-          <div>
-            <h2 class="post-item__title">{{ post.title }}</h2>
-            <div class="post-item__tags">
-              {% for tag in post.tags %}
-                <span class="tag">{{ tag }}</span>
-              {% endfor %}
-            </div>
-            {{ post.excerpt }}
-
-          </div>
-        </a>
-      </li>
-    {% endif %}
-  {% endfor %}
-</ul>
+        <p class="about__summary">I'm a Software Engineer based in Europe. I do a bit of everything, but I'm in more love with Backed development these days, currently studying various design patterns.</p>
+        <span class="about__sub-title">Here's a little bit more about me:</span>
+        <ul class="about__content">
+            <li class="about__item">People call me KK</li>
+            <li class="about__item">I 💙 Typescript </li>
+            <li class="about__item">I work at <a href="https://ub.io">@ubio</a>, we build Web Automation solution</li>
+            <li class="about__item">I live in a seaside town of Rome, Italy 🇮🇹 and I love it here. Every day is a new adventure (previously 🇰🇷 🇬🇧)</li>
+            <li class="about__item">I have a lovely dog called Pluk and he's my home office buddy 🐶</li>
+        </ul>
+    </div>
+</div>

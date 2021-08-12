@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<ul class="post-list">
+  {% for post in site.posts %}
+    {% if post.draft == false %}
+      <li>
+        <a href="{{ post.url }}"
+          class="post-item">
+          <div>
+            <h2 class="post-item__title">{{ post.title }}</h2>
+            <div class="post-item__tags">
+              {% for tag in post.tags %}
+                <span class="tag">{{ tag }}</span>
+              {% endfor %}
+            </div>
+            {{ post.excerpt }}
+
+          </div>
+        </a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>

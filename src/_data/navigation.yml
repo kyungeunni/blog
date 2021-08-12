@@ -1,6 +1,6 @@
 - name: Home
   link: /
-- name: About
-  link: /about
+- name: Posts
+  link: /posts
 # - name: Github
 #   link: https://github.com/kyungeunni
