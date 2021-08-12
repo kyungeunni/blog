@@ -27,6 +27,7 @@
 ========================================================================== */
 body {
     background-color: var(--bg-color);
+    font-size: var(--font-size);
 }
 
 a {
@@ -39,14 +40,14 @@ a:hover {
 }
 
 code {
-    background-color: var(--highlight-color);
-    padding: 0 var(--gap--sm);
+    background-color: #dcdbca;
+    padding: var(--gap--xs);
     font-size: 0.9em;
     border-radius: var(--gap--xs);
 }
 
 p {
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 blockquote {
@@ -111,10 +112,36 @@ blockquote p::before {
     width: 100%;
 }
 
-.tags__item {
+.post-list {
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+.post-item {
+    display: block;
+    padding: var(--gap--sm);
+    margin-bottom: var(--gap--lg);
+    border-radius: var(--gap);
+    color: black;
+    background: #f5f5dd;
+    box-shadow: 0 1px 3px rgba(0,0,0,.15);
+    transition: 0.4s;
+}
+
+.post-item:hover {
+    color: inherit;
+    transform: translateY(-5px);
+}
+
+.post-item__title {
+    color: black;
+}
+
+.tag {
     padding: var(--gap--xs) var(--gap--sm);
     margin-right: var(--gap--xs);
-    background-color: var(--highlight-color);
+    background-color: var(--primary-color);
+    color: #fff;
     border-radius: var(--gap--sm);
     font-style: italic;
     font-size: var(--font-size--sm);
