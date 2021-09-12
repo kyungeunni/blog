@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<ul class="reading-list">
+  {% for reading in site.readings %}
+      <li>
+        <a href="{{ reading.link }}"
+          class="reading-item">
+            <h2 class="reading-item__title">{{ reading.title }}</h2>
+        </a>
+        <p> {{ reading.content }} </p>
+      </li>
+  {% endfor %}
+</ul>

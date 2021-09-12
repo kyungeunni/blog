@@ -118,7 +118,7 @@ blockquote p::before {
 
 .post-item {
     display: block;
-    padding: var(--gap--sm);
+    padding: var(--gap--sm) var(--gap);
     margin-bottom: var(--gap--lg);
     border-radius: var(--gap);
     color: black;
