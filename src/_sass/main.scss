@@ -28,6 +28,7 @@
 body {
     background-color: var(--bg-color);
     font-size: var(--font-size);
+    color: var(--font-color);
 }
 
 a {
@@ -122,7 +123,7 @@ blockquote p::before {
     margin-bottom: var(--gap--lg);
     border-radius: var(--gap);
     color: black;
-    background: #f5f5dd;
+    background: #e7e4d5;
     box-shadow: 0 1px 3px rgba(0,0,0,.15);
     transition: 0.4s;
 }

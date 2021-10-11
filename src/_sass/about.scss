@@ -15,9 +15,6 @@
 
 .about__img {
     border-radius: 50%;
-    border-color: var(--primary-color);
-    border-width: var(--gap--sm);
-    border-style: solid;
     width: 220px;
     height: 220px;
     object-fit: cover;
@@ -25,6 +22,7 @@
 }
 
 .about__title {
+    font-family: var(--font-family--header);
     text-align: center;
 }
 
