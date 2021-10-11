@@ -30,6 +30,9 @@ body {
     font-size: var(--font-size);
     color: var(--font-color);
 }
+h1, h2, h3 {
+    font-family: var(--font-family--header);
+}
 
 a {
     text-decoration: none;

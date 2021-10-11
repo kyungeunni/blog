@@ -47,8 +47,8 @@ async function authMiddleware(ctx: Koa.Context, next: Koa.Next) {
 };
 ```
 What we need to do in our dev mock server is:
-    1. We should be able to set the url to point to dev server
-    2. Ability to control the response for each test (e.g. authorise the user or not, what data it returns)
+1. We should be able to set the url to point to dev server
+2. Ability to control the response for each test (e.g. authorise the user or not, what data it returns)
 
 As most of the time we define config values per environment, we can define one for the test environment and we can make it points to the local one:
 ```
