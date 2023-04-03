@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Inter&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+    <link rel="icon" href="/assets/img/favicon.ico">
+    <link type="application/atom+xml" rel="alternate" href="https://kyungeun.kim/feed.xml" title="Kyungeun Kim" />
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Kyungeun Kim | Possibly interesting dev notes</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Kyungeun Kim" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This is a place where Kyungeun logs her dev notes. Main topics are Typescript, OOP, K8s, and Vue" />
+<meta property="og:description" content="This is a place where Kyungeun logs her dev notes. Main topics are Typescript, OOP, K8s, and Vue" />
+<link rel="canonical" href="https://kyungeun.kim/posts.html" />
+<meta property="og:url" content="https://kyungeun.kim/posts.html" />
+<meta property="og:site_name" content="Kyungeun Kim" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Kyungeun Kim" />
+<meta name="twitter:site" content="@kyungeunni" />
+<script type="application/ld+json">
+{"description":"This is a place where Kyungeun logs her dev notes. Main topics are Typescript, OOP, K8s, and Vue","headline":"Kyungeun Kim","@type":"WebPage","url":"https://kyungeun.kim/posts.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav">
+    <div class="nav__menu">
+        
+            <a href="/" class="nav__item">
+                Home
+            </a>
+        
+            <a href="/posts" class="nav__item">
+                Posts
+            </a>
+        
+            <a href="/readings" class="nav__item">
+                Readings
+            </a>
+        
+    </div>
+</nav>
+
+      <div class="main">
+        <div class="main__contents">
+          <ul class="post-list">
+  
+    
+      <li>
+        <a href="/2023/04/02/rate-limiting-in-golang.html"
+          class="post-item">
+          <div>
+            <h2 class="post-item__title">Rate limiting in Golang using rate package</h2>
+            <div class="post-item__tags">
+              
+                <span class="tag">golang</span>
+              
+                <span class="tag">rate-limiting</span>
+              
+                <span class="tag">rate</span>
+              
+                <span class="tag">package</span>
+              
+            </div>
+            <p>Rate Limiting comes up quite often when working with web servers. As a Golang newbie(and working on Backend after a while), I had a chance to implement the rate limiter on the client side to not overwhelm the target server while generating the load.</p>
+
+
+
+          </div>
+        </a>
+      </li>
+    
+  
+    
+      <li>
+        <a href="/2021/06/26/replace-nock-in-unit-tests.html"
+          class="post-item">
+          <div>
+            <h2 class="post-item__title">Mocking HTTP requests when writing tests (Node.js)</h2>
+            <div class="post-item__tags">
+              
+                <span class="tag">unit-test</span>
+              
+                <span class="tag">test</span>
+              
+                <span class="tag">nock</span>
+              
+                <span class="tag">mocha</span>
+              
+                <span class="tag">node.js</span>
+              
+            </div>
+            <p>Quite often we need to mock remote HTTP requests when testing, either for integration tests or unit tests that your logic needs to react differently depending on the variation of the response of the request. There are several options to achieve that, but I will write down my favorite ones.</p>
+
+
+
+          </div>
+        </a>
+      </li>
+    
+  
+    
+      <li>
+        <a href="/2021/06/07/lerna-and-npm-7.html"
+          class="post-item">
+          <div>
+            <h2 class="post-item__title">How to maintain a monorepo using Lerna and NPM 7</h2>
+            <div class="post-item__tags">
+              
+                <span class="tag">monorepo</span>
+              
+                <span class="tag">lerna</span>
+              
+                <span class="tag">npm</span>
+              
+                <span class="tag">node.js</span>
+              
+                <span class="tag">workspace</span>
+              
+            </div>
+            <p>I’ve been putting off upgrading to NPM 7 for my monorepo using Lerna@4.0.0 due to several issues have been occurred. However I’ve reached a point where I couldn’t juggle around anymore as it was a significant productivity killer.</p>
+
+
+
+          </div>
+        </a>
+      </li>
+    
+  
+</ul>
+
+        </div>
+      </div>
+      <footer class="footer">
+        <p class="footer__copyright">© 2022 Kyungeun Kim. All rights reserved.</p>
+        <div class="footer__social">
+            <a rel="github"
+                href="https://github.com/kyungeunni"
+                title="Kyungeun Kim Github">
+                <i class="fab fa-github"></i>
+            </a>
+            <a rel="twitter"
+                href="https://twitter.com/kyungeunni"
+                title="Kyungeun Kim Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a rel="linkedin"
+                href="https://www.linkedin.com/in/kyungeun-kim-541021136"
+                title="Kyungeun Kim Linkedin">
+                <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+      </footer>
+    </div>
+  </body>
+</html>

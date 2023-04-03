@@ -1,0 +1,145 @@
+:root { --gap--xs: 2px; --gap--sm: 5px; --gap: 10px; --gap--lg: 15px; --gap--xl: 20px; --bg-color: #f2eddb; --bg-color--dark: #2D3047; --primary-color: #9f1cce; --secondary-color: #2971a5; --accent-color: #E03616; --muted-accent-color: #f9b0b0; --highlight-color:#ffd766; --font-family: 'Inter', Verdana, Arial, Helvetica, sans-serif; --font-family--mono: 'Roboto Mono', Courier, monospace; --font-family--header: 'Gilda Display', serif; --font-size: 15px; --font-size--sm: 12px; --font-color: #373530; --font-color--muted: #6e6e6e; }
+
+/* ========================================================================== Properties order example(ref: https://github.com/necolas/idiomatic-css) // Positioning position: absolute; z-index: 10; top: 0; right: 0; bottom: 0; left: 0;
+ // Display & Box Model display: inline-block; overflow: hidden; box-sizing: border-box; width: 100px; height: 100px; padding: 10px; border: 10px solid #333; margin: 10px;
+ // Other background: #000; color: #fff; font-family: sans-serif; font-size: 16px; text-align: right;
+========================================================================== */
+body { background-color: var(--bg-color); font-size: var(--font-size); color: var(--font-color); }
+
+h1, h2, h3 { font-family: var(--font-family--header); }
+
+a { text-decoration: none; color: var(--primary-color); }
+
+a:hover { color: var(--muted-accent-color); }
+
+code { background-color: #dcdbca; padding: var(--gap--xs); font-size: 0.9em; border-radius: var(--gap--xs); }
+
+p { line-height: 1.5; }
+
+blockquote { color: var(--secondary-color); font-style: italic; }
+
+blockquote p::before { content: "> "; }
+
+.container { display: flex; flex-flow: column nowrap; justify-content: stretch; align-items: stretch; min-height: 100vh; width: 100vw; font-family: var(--font-family); }
+
+.nav { padding: var(--gap) var(--gap--xl); font-family: var(--font-family--mono); font-size: 20px; }
+
+.nav__menu { display: flex; justify-content: center; padding: var(--gap); }
+
+.nav__item { color: #424242; text-decoration: none; }
+
+.nav__item::after { content: '|'; color: #424242; }
+
+.nav__item:not(:last-child) { margin-right: var(--gap--lg); }
+
+.nav__item:last-child::after { content: ''; }
+
+.main { flex: 3 auto; display: flex; align-items: center; flex-flow: column; padding: var(--gap--lg); }
+
+.main__contents { max-width: 780px; }
+
+.post-list { list-style-type: none; padding-inline-start: 0px; }
+
+.post-item { display: block; padding: var(--gap--sm) var(--gap); margin-bottom: var(--gap--lg); border-radius: var(--gap); color: black; background: #e7e4d5; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); transition: 0.4s; }
+
+.post-item:hover { color: inherit; transform: translateY(-5px); }
+
+.post-item__title { color: black; }
+
+.tag { padding: var(--gap--xs) var(--gap--sm); margin-right: var(--gap--xs); background-color: var(--primary-color); color: #fff; border-radius: var(--gap--sm); font-style: italic; font-size: var(--font-size--sm); }
+
+.footer { margin-top: var(--gap--lg); align-self: center; width: 100%; }
+
+.footer__copyright { text-align: center; font-size: 13px; color: #757575; }
+
+.footer__social { text-align: center; padding-bottom: var(--gap--xl); }
+
+.footer__social > a { display: inline-block; font-size: 20px; width: 30px; height: 30px; line-height: 30px; text-align: center; border-radius: 50%; border: 1px solid #ccc; margin: 0 var(--gap); color: var(--bg-color--dark); opacity: 0.5; }
+
+.footer__social > a:hover { opacity: 0.9; }
+
+.about { display: flex; flex-flow: column wrap; align-items: center; justify-content: space-around; max-width: 700px; }
+
+.about__intro { display: flex; flex-direction: column; align-items: center; margin: var(--gap--lg); }
+
+.about__img { border-radius: 50%; width: 220px; height: 220px; object-fit: cover; justify-self: center; }
+
+.about__title { font-family: var(--font-family--header); text-align: center; }
+
+.about__content { margin: var(--gap--lg); }
+
+.about__item { line-height: 1.5; }
+
+.post__meta { font-size: var(--font-size--sm); padding-bottom: var(--gap--lg); }
+
+.post__meta-author { color: var(--secondary-color); }
+
+.post__content a { text-decoration: underline; text-decoration-style: dotted; }
+
+.highlighter-rouge { max-width: 95vw; }
+
+pre.highlight { padding: var(--gap); overflow-y: auto; }
+
+.highlight code, .highlight pre { color: #fdce93; background-color: #3f3f3f; margin: 0; border-radius: var(--gap--sm); }
+
+.highlight .hll { background-color: #222; }
+
+.highlight .err { color: #e37170; background-color: #3d3535; }
+
+.highlight .k { color: #f0dfaf; }
+
+.highlight .p { color: #41706f; }
+
+.highlight .cs { color: #cd0000; font-weight: 700; }
+
+.highlight .gd { color: #cd0000; }
+
+.highlight .ge { color: #ccc; font-style: italic; }
+
+.highlight .gr { color: red; }
+
+.highlight .go { color: gray; }
+
+.highlight .gs { color: #ccc; font-weight: 700; }
+
+.highlight .gu { color: purple; font-weight: 700; }
+
+.highlight .gt { color: #0040D0; }
+
+.highlight .kc { color: #dca3a3; }
+
+.highlight .kd { color: #ffff86; }
+
+.highlight .kn { color: #dfaf8f; font-weight: 700; }
+
+.highlight .kp { color: #cdcf99; }
+
+.highlight .kr { color: #cdcd00; }
+
+.highlight .ni { color: #c28182; }
+
+.highlight .ne { color: #c3bf9f; font-weight: 700; }
+
+.highlight .nn { color: #8fbede; }
+
+.highlight .vi { color: #ffffc7; }
+
+.highlight .c, .highlight .c1 { color: #7f9f7f; }
+
+.highlight .l, .highlight .x, .highlight .no, .highlight .nd, .highlight .nl, .highlight .nx, .highlight .py, .highlight .w { color: #ccc; }
+
+.highlight .n, .highlight .nv, .highlight .vg { color: #dcdccc; }
+
+.highlight .o, .highlight .ow { color: #f0efd0; }
+
+.highlight .gh, .highlight .gp { color: #dcdccc; font-weight: 700; }
+
+.highlight .gi, .highlight .kt { color: #00cd00; }
+
+.highlight .ld, .highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .se, .highlight .sh, .highlight .si, .highlight .sx, .highlight .sr, .highlight .s1, .highlight .ss { color: #cc9393; }
+
+.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo, .highlight .il { color: #8cd0d3; }
+
+.highlight .na, .highlight .nt { color: #9ac39f; }
+
+.highlight .nb, .highlight .nc, .highlight .nf, .highlight .bp, .highlight .vc { color: #efef8f; }
