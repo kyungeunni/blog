@@ -6,7 +6,7 @@ layout: default
 <p class="post__meta">
   {% assign author = site.data.author %}
     {{ page.date | date_to_string }}
-      - <a href="{{ author.url }}">{{ author.name }}</a>
+      - <a href="{{ author.url }}" class="post__meta-author">{{ author.name }}</a>
 </p>
 
 <div class="post__content">
